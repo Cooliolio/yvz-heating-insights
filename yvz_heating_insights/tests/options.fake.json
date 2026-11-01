@@ -1,0 +1,52 @@
+{
+  "columns": [
+    {
+      "name": "temp_a",
+      "entity": "sensor.fake_a"
+    },
+    {
+      "name": "temp_b",
+      "entity": "sensor.fake_b"
+    },
+    {
+      "name": "hum_c",
+      "entity": "sensor.fake_c"
+    },
+    {
+      "name": "unknown_d",
+      "entity": "sensor.fake_unknown"
+    },
+    {
+      "name": "power_w",
+      "entity": "sensor.fake_power"
+    },
+    {
+      "name": "weather_condition",
+      "entity": "weather.fake_w"
+    },
+    {
+      "name": "weather_temp",
+      "entity": "weather.fake_w|temperature"
+    },
+    {
+      "name": "weather_wind",
+      "entity": "weather.fake_w|wind_speed"
+    },
+    {
+      "name": "pump",
+      "entity": "binary_sensor.fake_pump"
+    },
+    {
+      "name": "relay",
+      "entity": "switch.fake_relay"
+    },
+    {
+      "name": "mode",
+      "entity": "input_select.fake_mode"
+    },
+    {
+      "name": "missing_e",
+      "entity": "sensor.fake_missing"
+    }
+  ]
+}

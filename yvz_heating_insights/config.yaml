@@ -1,0 +1,27 @@
+name: "YVZ Heating Insights"
+slug: yvz_heating_insights
+version: "0.2.0"
+description: "Read-only logger of heating-related states into monthly CSV files"
+url: "https://github.com/Cooliolio/yvz-heating-insights"
+arch:
+  - amd64
+  - aarch64
+boot: auto
+startup: application
+init: false
+homeassistant_api: true
+map:
+  # Home Assistant config folder, read-write. Default mount is /homeassistant,
+  # so data lands in /homeassistant/heating_data/ (= <HA config>/heating_data).
+  - type: homeassistant_config
+    read_only: false
+options:
+  columns:
+    - name: sun_elevation
+      entity: sun.sun|elevation
+    - name: example_temperature
+      entity: sensor.example_temperature
+schema:
+  columns:
+    - name: match(^[a-z][a-z0-9_]*$)
+      entity: str

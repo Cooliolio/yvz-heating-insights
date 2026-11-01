@@ -1,0 +1,15 @@
+# generated data and credentials must never be committed
+*.csv
+heating_data/
+/data/
+.env
+*.key
+*.pem
+options*.json
+!**/tests/options.fake.json
+
+# python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
